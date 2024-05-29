@@ -1,0 +1,22 @@
+<div class="gallery">
+    {{ $images := readDir (print "assets/" .Get "dir") }}
+    {{ range $images }}
+      <img src="{{ "/assets/" .Get "dir" | relURL }}/{{ .Name }}" alt="{{ .Name }}">
+    {{ end }}
+  </div>
+  
+  <style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  </style>
+  
