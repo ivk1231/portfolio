@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: May 28, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: May 29, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="dark">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.ce4d91317784bce905d3f3661e3dbdabab71eef65d6e18e7117b0c56ff76f938.css" rel="stylesheet" />
+    <link href="/css/custom.min.4af6e1f0249dafde6108545dd31c2dc1de74d109106e9ce7892b076f43ce0cf1.css" rel="stylesheet" />
   
 
   <script>
@@ -791,35 +791,36 @@
       
       <script>
     let slideIndex = 1;
-showSlides(slideIndex);
+    showSlides(slideIndex);
 
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+      slides[slideIndex-1].style.transition = "opacity 0.5s ease-in-out"; 
+    }
 
 </script>
 <script>

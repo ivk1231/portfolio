@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: May 28, 2024 --><html lang="en-us" dir="ltr"
+<!-- Last Published: May 29, 2024 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="dark">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -66,7 +66,7 @@
 
   
     
-    <link href="/css/custom.min.ce4d91317784bce905d3f3661e3dbdabab71eef65d6e18e7117b0c56ff76f938.css" rel="stylesheet" />
+    <link href="/css/custom.min.0cd00dd43deda1fcefd75fdca376c804e561bda5dc9d4432bb1dd8a868af387f.css" rel="stylesheet" />
   
 
   <script>
@@ -795,36 +795,36 @@
   </div>
 
   
-  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><img src="https://fastly.picsum.photos/id/919/200/300.jpg?hmac=jkU3iBD7FmgjpBy_oLT-Au05XW2UsFassE3X44PO_iQ">
-  <div class="container">
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div class="container">
+  <div class="slideshow-main">
+  <div class="slideshow-image">
   <!-- Full-width images with number text -->
   <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-      <img id="img1" src="assets/icon.png" style="width:100%">
+    <div class="numbertext">1 / 5</div>
+      <img id="img1" src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img1.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-      <img src="assets/icon.png" style="width:100%">
+    <div class="numbertext">2 / 5</div>
+      <img src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img2.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-      <img src="assets/icon.png" style="width:100%">
+    <div class="numbertext">3 / 5</div>
+      <img src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img3.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-      <img src="assets/icon.png" style="width:100%">
+    <div class="numbertext">4 / 5</div>
+      <img src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img4.jpg" style="width:100%">
   </div>
   <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-      <img src="assets/icon.png" style="width:100%">
+    <div class="numbertext">5 / 5</div>
+      <img src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img5.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-      <img src="assets/icon.png" style="width:100%">
   </div>
-  <!-- Next and previous buttons -->
-<p><a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a></p>
+  <div class="slideshow-arrows">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  </div>
   <!-- Image text -->
   <div class="caption-container">
     <p id="caption"></p>
@@ -832,22 +832,19 @@
   <!-- Thumbnail images -->
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="uploads/smart-bio-cover.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="https://raw.githubusercontent.com/ivk1231/portfolio/main/static/uploads/falcons/img5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
     </div>
   </div>
 </div>
@@ -940,35 +937,36 @@ console.log("hello from the other side")
       
       <script>
     let slideIndex = 1;
-showSlides(slideIndex);
+    showSlides(slideIndex);
 
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+      slides[slideIndex-1].style.transition = "opacity 0.5s ease-in-out"; 
+    }
 
 </script>
 <script>
@@ -980,9 +978,10 @@ function showSlides(n) {
   let vssf = document.getElementById('vssf_svg');
   vssf.outerHTML = '<img src="/uploads/vssf.png" alt="vssf" style="width: 100%; height: auto;">';
   
-  let bishop = document.getElementById('bishop_svg');
-  bishop.outerHTML = '<img src="/uploads/bishop.png" alt="bishop" style="width: 100%; height: auto;">';
-  console.log("Hello")
+  let bishops = document.querySelectorAll('[id^="bishop_svg"]');
+  bishops.forEach(bishop => {
+    bishop.outerHTML = '<img src="/uploads/bishop.png" alt="bishop" style="width: 100%; height: auto;">';
+  });
 </script>
       
     

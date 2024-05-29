@@ -11,7 +11,7 @@ last_name: Varghese Koshy
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🛠️
 
 # Is this the primary user of the site?
 superuser: true
@@ -82,6 +82,9 @@ work:
       - Developed autonomous aircrafts, ground vehicles, and drones for SAE International competitions
       - Built custom PCBs, RPI-based target recognition systems, telemetry systems, and propulsion systems
       - Designed the Design Report
+    button: 
+      text: 'Design Report'
+      url: 'uploads/design.pdf'
   - position: Electronics Intern
     company_name: Keltron Component Complex LTD
     company_url: 'https://www.assailingfalcons.in/'
